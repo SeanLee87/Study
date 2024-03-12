@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do list</title>
     <link rel="stylesheet" href="/CSS/common.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 <body>
     <section>
+        <article>
+            <input type="text" value="0" class="countText">
+            <input type="text" value="0" class="countText">
+            <button>+</button>
+            <button>-</button>
+        </article>
         <article class="date_wrap">
             <input type="date" value="2024-03-11" >
         </article>
         <article class="time_wrap">
-            <div>1</div>
+            <div>11</div>
             <div>6</div>
             <span>:</span>
             <div>5</div>
@@ -56,4 +63,17 @@
         </article>
     </section>
 </body>
+<script>
+    // var countText = document.getElementsByClassName("countText")[0];    
+    // console.log(countText);
+    // countText.style.backgroundColor = 'red';
+
+    var countText2 = $('.countText');
+    console.log(countText2);
+
+    var vVar = 0; // 변수
+    let vLet = 1; // 변수
+    const vConst = 2; // 상수
+    
+</script>
 </html>
