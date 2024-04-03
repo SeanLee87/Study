@@ -6,6 +6,7 @@
     <title>To do list</title>
     <link rel="stylesheet" href="/CSS/common.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="/JS/todolist.js" defer></script>
 </head>
 <body>
     <section>
@@ -13,7 +14,7 @@
             <input type="date" value="2024-03-11" >
         </article>
         <article class="time_wrap">
-            <div>11</div>
+            <div>1</div>
             <div>6</div>
             <span>:</span>
             <div>5</div>
@@ -26,48 +27,34 @@
                 <button>COMPLETED</button>
             </div>
             <div class="addBtn">
-                <button>Add</button>
+                <button id="addBtn">Add</button>
             </div>
         </article>
-        <article class="add">
-            <input type="text">
-            <button>추가</button><button>취소</button>
+        <article class="addLine">
+            <input type="text" id="addText">
+            <button id="addTextBtn">추가</button>
+            <button id="cancelBtn">취소</button>
         </article>
         <article class="list">
-            <li class="checked">
-                <input type="checkbox" name="" id="" checked>
-                HTML5
-                <button>삭제</button>
-            </li>
-            <li>
-                <input type="checkbox" name="" id="">
-                CSS
-                <button>삭제</button>
-            </li>
-            <li>
-                <input type="checkbox" name="" id="">
-                JavaScript
-                <button>삭제</button>
-            </li>
-            <li>
-                <input type="checkbox" name="" id="">
-                ReactJs
-                <button>삭제</button>
-            </li>
+            <div>
+                <li class="checked">
+                    <input type="checkbox" name="" id="" checked>
+                    HTML5
+                    <button class="removeBtn">삭제</button>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="">
+                    CSS
+                    <button class="removeBtn">삭제</button>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="">
+                    JavaScript
+                    <button class="removeBtn">삭제</button>
+                </li>
+            </div>
+            
         </article>
     </section>
 </body>
-<script>
-    // var countText = document.getElementsByClassName("countText")[0];    
-    // console.log(countText);
-    // countText.style.backgroundColor = 'red';
-
-    var countText2 = $('.countText');
-    console.log(countText2);
-
-    var vVar = 0; // 변수
-    let vLet = 1; // 변수
-    const vConst = 2; // 상수
-    
-</script>
 </html>

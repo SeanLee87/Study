@@ -88,13 +88,37 @@ decrease.onclick = () => {
 }
 */
 
+let number = $('#number');
+let increase = $('#increase');
+let decrease = $('#decrease');
+
+function plus (){
+    let current = Number(number.text());
+    number.text(current + 1);
+};
+
+function minus (){
+    let current = Number(number.text());
+    number.text(current - 1);
+};
+
 // JQuery
-$('#increase').click(function(){
-    let current = parseInt($('#number').text());
-    $('#number').text(current + 1);
+// 신버전
+increase.on('click', function(){
+    plus ()
 });
-$('#decrease').click(function(){
-    let current = parseInt($('#number').text());
-    $('#number').text(current - 1);
+
+decrease.on('click', function(){
+    minus ()
 });
+
+// 구버전
+// $('#increase').click(function(){
+//     let current = parseInt(number.text());
+//     number.text(current + 1);
+// });
+// $('#decrease').click(function(){
+//     let current = parseInt(number.text());
+//     number.text(current - 1);
+// });
 
