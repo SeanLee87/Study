@@ -145,13 +145,28 @@ section {
     color: #715555;
 }
 
+/* 버튼 제어 */
 .list button{
-    display: none;
+    /*display: none;*/
     float: right;
 }
 
 .list li:hover > button {
-    display: inline;
+    /*display: inline;*/
 }
 
+.completBtn {
+    display: none;
+}
 
+li.modify .completBtn {
+    display: inline-block;
+}
+
+li.modify .modifyBtn{
+    display: none;
+}
+
+li.modify .removeBtn{
+    display: none;
+}
