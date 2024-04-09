@@ -10,17 +10,25 @@ $("#addTextBtn").on('click', function(){
     if (addText == ""){
         alert("할 일을 입력하세요.");
     } else {
-        let addHtml = '<li>';
-        addHtml += '<input type="checkbox" name="" id="">';
-        addHtml += '<span class="todoText">';
-        addHtml += addText
-        addHtml += '</span>';
-        addHtml += '<button class="completBtn">완료</button>';
-        addHtml += '<button class="modifyBtn">수정</button>';
-        addHtml += '<button class="removeBtn">삭제</button>';
-        addHtml += '</li>';
+        // let addHtml = '<li>';
+        // addHtml += '<input type="checkbox" name="" id="">';
+        // addHtml += '<span class="todoText">';
+        // addHtml += addText
+        // addHtml += '</span>';
+        // addHtml += '<button class="completBtn">완료</button>';
+        // addHtml += '<button class="modifyBtn">수정</button>';
+        // addHtml += '<button class="removeBtn">삭제</button>';
+        // addHtml += '</li>';
+        //todoList.append(addHtml);
 
-        todoList.append(addHtml);
+        todoList.append(`<li>
+        <input type="checkbox" name="" id="">
+        <span class="todoText"> ${addText} </span>
+        <button class="completBtn">완료</button>
+        <button class="modifyBtn">수정</button>
+        <button class="removeBtn">삭제</button>
+        </li>
+        `)
     }
 });
 
