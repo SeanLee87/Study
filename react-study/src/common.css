@@ -1,0 +1,178 @@
+body {
+  margin: 0 auto;
+  /* background-image: url(./backimg.jpg);
+  background-size: cover; */
+}
+
+body {
+-ms-overflow-style: none;
+}
+
+::-webkit-scrollbar { 
+display: none;
+}
+
+section {
+  background-color: #be4a4a;
+  width: max-content;
+  margin : 5rem auto;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.TodoList {
+  padding: 100px;
+  background-image: url(./backimg.jpg);
+  background-size: cover;
+}
+
+/* 시간 & 시계 */
+.date_wrap {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.date_wrap input[type="date"] {
+  background-color: #be4a4a;
+  border: 0;
+  color: white;
+  font-size: small;
+}
+
+.time_wrap {
+  font-size: x-large;
+  margin-bottom: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.time_wrap div {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #202020;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.time_wrap span {
+  font-weight: 900;
+}
+
+/* 버튼 영역 */
+.btn_wrap {
+  margin-bottom: 1rem;   
+}
+
+.btn_wrap div {
+  display: inline-block;
+}
+
+.btn_wrap button {
+  cursor: pointer;
+}
+
+.subtab button{
+  border: 1px solid #9f3b3b;
+  background-color: #9f3b3b;
+  color: 4f1212;
+  padding: 10px;
+}
+
+.subtab button.active{
+  border: 1px solid white;
+  background-color: #be4a4a;
+  color: white;
+  padding: 10px;
+}
+
+.addBtn button {
+  margin-left: 95px;
+  padding: 10px;
+  width: 70px;
+  /* float: right; */
+  border-radius: 10px;
+  border: 0px;
+  background-color: #37322f;
+  color: white;
+  text-align: center;
+}
+
+.addBtn button:hover {
+  background-color: black;
+}
+
+/* 입력 영역  */
+.addLine {
+  padding: 20px 15px;
+  background-color: #f5e2d3;
+  margin-bottom: 0.5rem;
+}
+
+.addLine input[type="text"] {
+  width: 260px;
+  margin-right: 5px;
+}
+
+.addLine button {
+  margin-left: 5px;
+}
+
+/* 리스트 */
+.list {
+  height: 320px;
+  width: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  clear: both;
+}
+.list li {
+  list-style: none;
+  padding: 20px 15px;
+  margin-bottom: 0.5rem;
+}
+.list li:nth-child(odd) {
+  background-color: #dfc1ae;
+}
+
+.list li:nth-child(even) {
+  background-color: #f5e2d3;
+}
+
+.list input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+
+.list li.checked {
+  background-color: #342323;
+  color: #715555;
+}
+
+/* 버튼 제어 */
+.list button{
+  /*display: none;*/
+  float: right;
+}
+
+.list li:hover > button {
+  /*display: inline;*/
+}
+
+.completBtn {
+  display: none;
+}
+
+li.modify .completBtn {
+  display: inline-block;
+}
+
+li.modify .modifyBtn{
+  display: none;
+}
+
+li.modify .removeBtn{
+  display: none;
+}
