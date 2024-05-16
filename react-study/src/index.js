@@ -4,13 +4,13 @@ import ReactDOM from 'react-dom/client';
 // import App from './App';
 import Counter from './Counter';
 import ToDoList from './ToDoList';
-import Study0514 from './Study0514';
+import Study from './Study0521';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Study0514 />
+    <Study />
     <div>----------------------------------------</div>
     <Counter />
     <ToDoList />

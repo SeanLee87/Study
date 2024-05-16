@@ -1,5 +1,10 @@
 import './common.css';
 
+/**
+ * React 강의 (컴포넌트 만들기 ~ props)
+ * https://opentutorials.org/course/4900/31265
+ */
+
 function Header(props){
   console.log('props', props);
   return <header>
