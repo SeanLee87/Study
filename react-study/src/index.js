@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 // import App from './App';
 import Counter from './Counter';
 import ToDoList from './ToDoList';
-import Study from './Study0528';
+import Study from './Study0605';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

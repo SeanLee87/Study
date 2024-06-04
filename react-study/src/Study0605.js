@@ -2,7 +2,8 @@ import './common.css';
 import { useState } from 'react';
 
 /**
- * 스테이트 활용한 카운터
+ * React 강의 (생성기능구현 ~ )
+ * https://opentutorials.org/course/4900/31269
  */
 
 function Article(props){
@@ -89,7 +90,3 @@ function App() {
 }
 
 export default App;
-
-/**
-
- */
